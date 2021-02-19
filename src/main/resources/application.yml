@@ -1,0 +1,17 @@
+mongodb:
+    uri: mongodb://${MONGO_HOST:localhost}:${MONGO_PORT:27017}
+    db-name: cloudchats
+
+security:
+    access-token:
+        secret: 614E645266556A586E3272357538782F413F4428472B4B6250655368566B5970 #${ACCESS_TOKEN_SECRET}
+        expires-in: 3000
+    refresh-token:
+        secret: 614E645266556A586E3272357538782F413F4428472B4B6250655368566B5970 #${REFRESH_TOKEN_SECRET}
+        expires-in: 30000
+
+logging:
+    level:
+        org:
+            springframework:
+                security: DEBUG
